@@ -14,7 +14,11 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@frontend-coding-challenge/feature-dashboard": [
+        "libs/feature-dashboard/src/index.ts"
+      ]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }
