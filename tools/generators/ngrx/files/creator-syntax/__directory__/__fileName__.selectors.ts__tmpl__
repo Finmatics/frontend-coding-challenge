@@ -1,0 +1,6 @@
+import { createFeatureSelector, createSelector } from '@ngrx/store';
+import { <%= constantName %>_FEATURE_KEY, State, <%= propertyName %>Adapter } from './<%= fileName %>.reducer';
+
+export const get<%= className %>State = createFeatureSelector<State>(<%= constantName %>_FEATURE_KEY);
+
+export const getIsLoading = createSelector(get<%= className %>State, (state) => state.isLoading);
