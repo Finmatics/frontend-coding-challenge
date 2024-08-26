@@ -1,12 +1,14 @@
 {
+  "name": "feature-dashboard",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
   "projectType": "library",
-  "root": "libs/feature-dashboard",
   "sourceRoot": "libs/feature-dashboard/src",
   "prefix": "frontend-coding-challenge",
+  "tags": [],
   "targets": {
     "test": {
       "executor": "@nrwl/jest:jest",
-      "outputs": ["coverage/libs/feature-dashboard"],
+      "outputs": ["{workspaceRoot}/coverage/libs/feature-dashboard"],
       "options": {
         "jestConfig": "libs/feature-dashboard/jest.config.js",
         "passWithNoTests": true
@@ -21,6 +23,5 @@
         ]
       }
     }
-  },
-  "tags": []
+  }
 }
