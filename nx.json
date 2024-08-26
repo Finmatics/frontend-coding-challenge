@@ -1,10 +1,5 @@
 {
-  "npmScope": "frontend-coding-challenge",
-  "affected": {
-    "defaultBase": "main"
-  },
   "cli": {
-    "defaultCollection": "@nrwl/angular",
     "packageManager": "npm"
   },
   "implicitDependencies": {
@@ -16,10 +11,7 @@
   },
   "tasksRunnerOptions": {
     "default": {
-      "runner": "@nrwl/workspace/tasks-runners/default",
-      "options": {
-        "cacheableOperations": ["build", "lint", "test", "e2e"]
-      }
+      "options": {}
     }
   },
   "targetDependencies": {
@@ -45,5 +37,20 @@
       "style": "scss"
     }
   },
-  "defaultProject": "app"
+  "defaultProject": "app",
+  "targetDefaults": {
+    "build": {
+      "cache": true
+    },
+    "lint": {
+      "cache": true
+    },
+    "test": {
+      "cache": true
+    },
+    "e2e": {
+      "cache": true
+    }
+  },
+  "defaultBase": "main"
 }
